@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HearHymn</title>
+ <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<style>
+body {
+ background-color: rgb(89, 149, 50)
+}
+
+h1 {
+ z-index: 3;
+ font-size: 40pt;
+ border-radius: 10px;
+ text-align: center;
+ font-family: "Raleway";
+ background-color: rgb(127, 178, 94);
+ margin: auto;
+}
+
+img {
+ border-radius: 10px;
+ margin-top: 5px;
+ width: 100%;
+ opacity: 80%;
+}
+
+h3 {
+ position: relative;
+ font-family: "Open sans";
+ float: left;
+ margin-right: -80px;
+ margin-left: 10px;
+ z-index: 2;
+}
+
+.drop-down {
+ font-family: "Open sans";
+ background-color: rgba(171, 207, 149, .8);;
+ padding: 30px;
+ border-radius: 15px;
+ position: absolute;
+ left: 7px;
+ top: 9px;
+ z-index: 1;
+}
+</style>
+<body>
+ <h3 id="scores">
+  Scores▼
+ </h3>
+<h1>
+ HearHymn
+</h1>
+ <img src="https://images.squarespace-cdn.com/content/v1/558031d4e4b0dee124e33be4/1455208347612-IUQ6VUSC4NS87H9QT7B9/ke17ZwdGBToddI8pDm48kM7eYaoy66Bfw4SsQbVf_FF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k5fwC0WRNFJBIXiBeNI5fLJZAiCqHZlpHIREvv0K4ZQLvo39Gt9kBQH7Ew4pKmW3g/violin+pic.jpg?format=1500w" alt="Violin Image">
+<script>
+var scoresEl = document.getElementById("scores");
+var dropDownEl = document.createElement("p");
+dropDownEl.textContent = "Text";
+var onButtonClick = function() {
+ document.body.appendChild(dropDownEl);
+};
+scoresEl.addEventListener("click", onButtonClick);
+
+dropDownEl.className = "drop-down";
+</script>
+</body>
+</html>
